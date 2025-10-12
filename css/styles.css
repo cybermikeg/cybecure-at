@@ -70,12 +70,12 @@ BANNER  CLASSES
 /*-------------------------------------------------
 BOX CLASSES
 -------------------------------------------------*/
-.boxs1{float:left; background:#202b43; width:273px; padding:50px 30px 50px 30px;}
-.boxs2{float:left; background:#25314d; width:273px; padding:50px 30px 50px 30px;}
-.boxs3{float:left; background:#2a3856; width:273px; padding:50px 30px 50px 30px;}
+.boxs1{float:left; background:#202b43; width:270px; padding:50px 30px 50px 30px;}
+.boxs2{float:left; background:#25314d; width:270px; padding:50px 30px 50px 30px;}
+.boxs3{float:left; background:#2a3856; width:270px; padding:50px 30px 50px 30px;}
 .title h1{ font-size:22px; color:#9cff00; font-weight:normal;}
 .title h2{ font-size:16px; color:#9cff00;}
-.panel-img{ margin:0 auto; padding:20px 0px 20px 0px; width:270px;}
+.panel-img{ margin:0 auto; padding:20px 0px 20px 0px; width:260px;}
 .content p{ color:#54657b;}
 .content p1{ color:#54657b;}
 .controller .buttons{ background:#9cff00; line-height:30px; text-align:center; float:left;}
@@ -97,7 +97,7 @@ LEFT-PANEL CLASSES
 /*-------------------------------------------------
 RIGHT-PANEL CLASSES
 -------------------------------------------------*/
-.right-panel{width:290px; float:left;}
+.right-panel{width:298px; float:left;}
 .right-panel .panel{ border:#24314c solid 1px; padding:30px 30px 30px 30px; background:#202b43; margin-bottom:30px; overflow:auto;}
 .right-panel .panel .title{ border-bottom:#25314c solid 1px; padding-bottom:20px;}
 .right-panel .panel .content ul{padding-left:0px;}
@@ -118,8 +118,8 @@ RIGHT-PANEL CLASSES
 .contact-panel .buttons a:hover{color:#1c263c;}
 .search{ border-bottom:none; margin-top:20px}
 .search ul li{list-style:none; float:left; border:none;display:block;}
-.libg{background:#91a3c2; width:190px; text-indent:5px;}
-.search-filed{width:190px; height:36px; border:none; float:left; background:none repeat scroll 0 0 transparent; text-indent:5px;font-family: 'Open Sans', sans-serif; font-size:13px; color:#fff;}
+.libg{background:#91a3c2; width:195px; text-indent:5px;}
+.search-filed{width:195px; height:36px; border:none; float:left; background:none repeat scroll 0 0 transparent; text-indent:5px;font-family: 'Open Sans', sans-serif; font-size:13px; color:#fff;}
 .contact-panel.padding-bottm{padding-bottom:20px;}
 
 .address .panel { border:none; color:#91a3c2}
