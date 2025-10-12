@@ -63,7 +63,7 @@ BANNER  CLASSES
 .banner-wrapper .controller{padding-top:30px; padding-bottom:30px; float:right;}
 .banner-wrapper .controller ul li{padding-right:10px; float:left; list-style:none;}
 .banner-wrapper .banner{width:1030px; margin:0 auto;}
-.banner .banner-bg{background:url(../images/cover.jpg) no-repeat center; width:910px; height:498px; padding:0px 60px 0px 60px;}
+.banner .banner-bg{background:url(../images/cover.jpg) no-repeat center; width:920px; height:498px; padding:0px 50px 0px 60px;}
 .banner-bg .panel{float:left; width:460px; padding-top:100px;}
 .banner-bg .panel .title h1{ color:#1c263c; font-size:33px;}
 .banner-bg .panel .content p{ font-size:20px; color:#768297; padding-top:30px;}
@@ -71,7 +71,7 @@ BANNER  CLASSES
 .banner-bg .panel .banner-button:hover{ background:#9cff00; border-left:#455268 solid 10px;}
 .banner-button a{color:#b6c0d2; line-height:50px; text-align:center; text-decoration:none; font-family: 'Oswald', sans-serif; font-size:18px;}
 .banner-button a:hover{color:#455268; line-height:50px; text-align:center;}
-.banner-bg .banner-img{ float:left; width:458px;}
+.banner-bg .banner-img{ float:left; width:465px;}
 
 /*-------------------------------------------------
 BOX CLASSES
