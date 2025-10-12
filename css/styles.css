@@ -8,7 +8,9 @@ h1{font-family: 'Oswald', sans-serif; font-weight:normal;}
 h2{font-family: 'Open Sans', sans-serif; font-weight:normal; font-size:16px;}
 h3{font-family: 'Open Sans', sans-serif; font-weight:normal; font-size:14px; color:#fff; }
 /*h2{font-family: 'Oswald', sans-serif; font-weight:normal; font-size:16px;}
-*/p{font-family: 'Open Sans', sans-serif; font-size:13px; padding-bottom:20px;}
+*/
+p{font-family: 'Open Sans', sans-serif; font-size:13px; padding-bottom:20px;}
+p1{font-family: 'Open Sans', sans-serif; font-size:13px; padding-bottom:0px;}
 a{color:#9cff00; text-decoration:none;}
 a:hover{ color:#91a3c2;}
 /*h2{font-family: 'Open Sans', sans-serif;}
@@ -26,18 +28,13 @@ GENERAL CLASS
 .page{width:970px; background:#1c263c; margin:0 auto;}
 .wrapper{background:#1c263c; margin:0 auto; width:970px;}
 .panel{ overflow:hidden;}
-.controller{}
-.title{}
-.content{}
 .buttons{ width:80px; height:30px;}
-.form{}
 .text-field{ background:#91a3c2; width:200px; height:16px; padding:10px; border:none; font-family: 'Open Sans', sans-serif; font-size:13px; color:#fff;}
 .textarea{background:#91a3c2; width:200px; height:106px; padding:10px; border:none; font-family: 'Open Sans', sans-serif; font-size:13px; color:#fff; overflow:auto;}
 /*-------------------------------------------------
 SOCIAL NETWORKING CLASSES
 -------------------------------------------------*/
 .social-wrapper{ background:#1c263c; height:55px; padding-top:25px;}
-.social-wrapper .row{}
 .social-wrapper .row ul{width:175px; float:right; list-style:none;}
 .social-wrapper .row ul li{float:left; padding-right:15px;}
 .social-wrapper .row ul li.no-padding{float:left; padding-right:0px;}
@@ -80,6 +77,7 @@ BOX CLASSES
 .title h2{ font-size:16px; color:#9cff00;}
 .panel-img{ margin:0 auto; padding:20px 0px 20px 0px; width:260px;}
 .content p{ color:#54657b;}
+.content p1{ color:#54657b;}
 .controller .buttons{ background:#9cff00; line-height:30px; text-align:center; float:left;}
 .controller .buttons:hover{ background:#91a3c2; line-height:30px;}
 .controller .buttons a{ text-decoration:none; color:#1c263c;}
