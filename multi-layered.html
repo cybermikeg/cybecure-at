@@ -69,7 +69,7 @@
     <div class="panel">
       <div class="title">
         <div class="clear"><br></div>
-        <h1 style="text-align:center">Cyber Security Analysis and Configuration</h1>
+        <h1 style="text-align:center">Cyber Security Multi Layered Approach</h1>
       </div>
     </div>
   </div>
@@ -79,180 +79,181 @@
     <div class="content_wrap">
       <div class="left-panel">
         <div class="panel">
-          <div class="title">
-            <div class="icons"><img src="images/arrow-icons.png" alt="" /></div>
-            <h1>Cyber Security Analysis</h1>
-          </div>
           <div class="content">
             <p> Security analysis involves evaluating the security posture of an organization, system, or
               application to identify vulnerabilities, threats, and risks.</p>
-            <h3>Risk Assessment</h3>
+            <p>Required as No single defense is foolproof and attackers often exploit gaps between systems. The layers help delay, detect,
+              and mitigate threats, while also aligning with best practices from NIST, ISO 27001, CIS, etc.</p>
+            <div class="title">
+            <div class="icons"><img src="images/arrow-icons.png" alt="" /></div>
+            <h1>The 7 Core Layers of Cyber Security</h1>
+          </div>
+            <h3>Physical Security</h3>
             <p></p>
             <ul>
               <li>
-                <p1>assets (hardware, software, data).</p1>
+                <p1>Biometric access controls</p1>
               </li>
               <li>
-                <p1>Identify threats (malware, phishing, insider threats, etc.).</p1>
+                <p1>Security guards, CCTV</p1>
               </li>
               <li>
-                <p1>Evaluate vulnerabilities (unpatched software, misconfigurations).</p1>
+                <p1>Locked server rooms</p1>
               </li>
               <li>
-                <p>Determine impact and likelihood of threats exploiting vulnerabilities.</p>
+                <p>Environmental controls (fire suppression, cooling)</p>
               </li>
             </ul>
-            <h3>Threat Modeling</h3>
+            <h3>Network Security</h3>
             <p></p>
             <ul>
               <li>
-                <p1>Map potential attack vectors.</p1>
+                <p1>Firewalls (e.g., pfSense, Cisco ASA)</p1>
               </li>
               <li>
-                <p1>Use frameworks like STRIDE or DREAD.</p1>
+                <p1>Intrusion Detection/Prevention Systems (IDS/IPS)</p1>
+              </li><li>
+                <p1>Network segmentation (VLANs, DMZ)</p1>
               </li>
               <li>
-                <p>Model attacker behavior (internal/external).</p>
+                <p>VPNs and secure tunneling</p>
               </li>
             </ul>
-            <h3>Vulnerability Assessment</h3>
+            <h3>Endpoint Security</h3>
             <p></p>
             <ul>
               <li>
-                <p1>Use tools like:</p1>
+                <p1>Antivirus / EDR solutions (e.g., CrowdStrike, SentinelOne)</p1>
               </li>
               <li>
-                <p1>Nessus, OpenVAS – for network scans.</p1>
+                <p1>Device encryption (BitLocker, FileVault)</p1>
               </li>
               <li>
-                <p1>Nikto, Burp Suite – for web application vulnerabilities.</p1>
+                <p1>USB and device control policies</p1>
               </li>
               <li>
-                <p1>Review CVEs and security advisories.</p1>
-              </li>
-              <li>
-                <p>Patch management review.</p>
+                <p>Mobile Device Management (MDM)</p>
               </li>
             </ul>
-            <h3>Penetration Testing</h3>
+            <h3>Application Security</h3>
             <p></p>
             <ul>
               <li>
-                <p1>Simulate real attacks to find exploitable vulnerabilities.</p1>
+                <p1>Input validation, output encoding</p1>
               </li>
               <li>
-                <p1>Often categorized as:</p1>
+                <p1>Secure coding practices (OWASP Top 10)</p1>
               </li>
               <li>
-                <p1>Black box (no internal info)</p1>
+                <p1>Web Application Firewalls (WAF)</p1>
               </li>
               <li>
-                <p1>White box (full info)</p1>
-              </li>
-              <li>
-                <p>Gray box (partial info)</p>
+                <p>Regular code audits and penetration testing</p>
               </li>
             </ul>
-            <h3>Log Analysis & Monitoring></h3>
+            <h3>Data Security</h3>
             <p></p>
             <ul>
               <li>
-                <p1>Review logs (from firewalls, IDS/IPS, servers).</p1>
+                <p1>Encryption (AES-256, TLS)</p1>
               </li>
               <li>
-                <p1>Use SIEM tools like Splunk, ELK Stack, QRadar.</p1>
+                <p1>Data Loss Prevention (DLP)</p1>
               </li>
               <li>
-                <p>Detect anomalies or patterns of attack.</p>
+                <p1>Access controls and data classification</p1>
+              </li>
+              <li>
+                <p>Secure backups and disaster recovery</p>
+              </li>
+            </ul>
+            <h3>Identity & Access Management (IAM)</h3>
+            <p></p>
+            <ul>
+              <li>
+                <p1>Strong authentication (MFA, biometrics)</p1>
+              </li>
+              <li>
+                <p1>Least privilege principle</p1>
+              </li>
+              <li>
+                <p1>Role-Based Access Control (RBAC)</p1>
+              </li>
+              <li>
+                <p>Identity federation (e.g., SSO, SAML, OAuth)</p>
+              </li>
+            </ul>
+            <h3>Security Awareness & Human Layer</h3>
+            <p></p>
+            <ul>
+              <li>
+                <p1>Phishing simulation and training</p1>
+              </li>
+              <li>
+                <p1>Security policies and acceptable use policies</p1>
+              </li>
+              <li>
+                <p1>Regular training and refreshers</p1>
+              </li>
+              <li>
+                <p>Insider threat detection programs</p>
+              </li>
+            </ul>
+            <div class="title">
+            <h2>Bonus Layers</h2>
+            </div>
+            <h3>Cloud Security (if using cloud infrastructure)</h3>
+            <p></p>
+            <ul>
+              <li>
+                <p1>IAM configuration</p1>
+              </li>
+              <li>
+                <p1>Encryption of cloud storage</p1>
+              </li>
+              <li>
+                <p>Misconfiguration monitoring (e.g., AWS Config, Azure Defender)</p>
+              </li>
+            </ul>
+            <h3>Compliance & Monitoring Layer</h3>
+            <p></p>
+            <ul>
+              <li>
+                <p1>SIEM systems (Splunk, QRadar)</p1>
+              </li>
+              <li>
+                <p1>Continuous compliance checks (CIS Benchmarks, NIST, PCI-DSS)</p1>
+              </li>
+               <li>
+                <p1>Centralized logging and alerting</p1>
+              </li>
+              <li>
+                <p>Audit trails</p>
+              </li>
+            </ul>
+            <div class="title">
+            <h2>Best Practices for Multi-Layer Security</h2>
+            </div>
+            <ul>
+              <li>
+                <p1>Zero Trust Architecture – trust nothing, verify everything.</p1>
+              </li>
+              <li>
+                <p1>Regular patching and updates</p1>
+              </li>
+               <li>
+                <p1>Security by design – build security into systems from the start.</p1>
+              </li>
+               <li>
+                <p1>Continuous monitoring and threat hunting</p1>
+              </li>
+              <li>
+                <p>Incident response planning – test regularly</p>
               </li>
             </ul>
           </div>
         </div>
-        <div class="panel">
-          <div class="title">
-            <div class="icons"><img src="images/arrow-icons.png" alt="" /></div>
-            <h1>Cyber Security Configuration</h1>
-          </div>
-          <div class="content">
-            <p>This involves implementing security measures and hardening systems to prevent unauthorized access or data
-              breaches.</p>
-            <h3>Network Security</h3>
-            <ul>
-              <li>
-                <p1>Configure firewalls (e.g., pfSense, Cisco ASA).</p1>
-              <li>
-                <p1>Set up VLANs and segmentation.</p1>
-              <li>
-                <p1>Use IDS/IPS (e.g., Snort, Suricata).</p1>
-              <li>
-                <p>Disable unused ports/services.</p>
-            </ul>
-            <h3>System Hardening</h3>
-            <ul>
-              <li>
-                <p1>Remove unnecessary software.</p1>
-              <li>
-                <p1>Apply security patches regularly.</p1>
-              <li>
-                <p1>Configure proper file permissions.</p1>
-              <li>
-                <p>Disable default accounts or change credentials.</p>
-            </ul>
-            <h3>Access Control</h3>
-            <ul>
-              <li>
-                <p1>Implement least privilege principle.</p1>
-              <li>
-                <p1>Use Role-Based Access Control (RBAC).</p1>
-              <li>
-                <p1>Configure strong password policies.</p1>
-              <li>
-                <p>Use Multi-Factor Authentication (MFA).</p>
-            </ul>
-            <h3>Endpoint Protection</h3>Endpoint Protection
-            <ul>
-              <li>
-                <p1>Install and configure antivirus/EDR software.</p1>
-              <li>
-                <p1>Enable disk encryption (e.g., BitLocker, FileVault).</p1>
-              <li>
-                <p>Configure USB and device control.</p>
-            </ul>
-            <h3>Cloud Security Configuration</h3>
-            <ul>
-              <li>
-                <p1>Harden cloud environments (e.g., AWS, Azure).</p1>
-              <li>
-                <p1>Use Identity and Access Management (IAM) securely.</p1>
-              <li>
-                <p1>Enable encryption at rest and in transit.</p1>
-              <li>
-                <p>Monitor for misconfigurations (tools: AWS Config, Azure Security Center).</p>
-            </ul>
-            <h3>Application Security</h3>
-            <ul>
-              <li>
-                <p1>Input validation, secure coding practices.</p1>
-              <li>
-                <p1>Use HTTPS, secure cookies, headers.</p1>
-              <li>
-                <p1>Set security policies in web servers (e.g., Apache, NGINX).</p1>
-              <li>
-                <p>Use tools like OWASP ZAP for testing.</p>
-            </ul>
-            <h3>Security Baselines</h3>
-            <ul>
-              <li>
-                <p1>Use templates or benchmarks:</p1>
-              <li>
-                <p1>CIS Benchmarks</p1>
-              <li>
-                <p1>NIST 800-53</p1>
-              <li>
-                <p>ISO/IEC 27001 standards</p>
-            </ul>
-          </div>
-          <!--       <div class="controller">
+        <!--       <div class="controller">
           <div class="buttons">
             <h2><a href="#">MORE</a></h2>
           </div>
@@ -288,7 +289,7 @@
           <div class="content">
             <ul>
               <li><a href="analysis.html">Analysis and Configuration</a></li>
-              <li><a href="multi-layered.html">Multi-Layered Approach</a></li>
+              <li><a href="#">Multi-Layered Approach</a></li>
               <li><a href="#">Trusted Lines of Configuration</a></li>
               <li><a href="#">Minimal Exposure</a></li>
             </ul>
