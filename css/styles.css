@@ -13,7 +13,13 @@ p{font-family: 'Open Sans', sans-serif; font-size:13px; padding-bottom:20px;}
 p1{font-family: 'Open Sans', sans-serif; font-size:13px; padding-bottom:0px;}
 a{color:#9cff00; text-decoration:none;}
 a:hover{ color:#91a3c2;}
-/*h2{font-family: 'Open Sans', sans-serif;}
+/*h2{font-family: 'Open Sans', sans-serif;}*/
+table { font-size: 13px; /* Set the font size to 16 pixels */ }
+th, tfoot td {
+font-size: 15px;
+text-align: center;
+font-weight: bold;
+}
 *//*--------------------------------------- 
 GENERAL CLASS
 ----------------------------------------*/
