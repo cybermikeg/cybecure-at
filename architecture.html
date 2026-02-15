@@ -31,8 +31,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a> </li>
         <li> <a href="architecture.html">Architecture</a> </li>
-<!--    <li> <a href="work.html">Work</a> </li>
-        <li><a href="pages.html">Pages</a></li>
+    <!--    <li><a href="pages.html">Pages</a></li>
         <li><a href="contact.html">Contact</a></li> -->
       </ul>
     </div>
@@ -45,128 +44,102 @@
     <div class="left-panel">
       <div class="panel">
 				<div class="title">
-		          <h1>Services</h1><br>
-		          <img src="images/Zero trust security architecture diagram.png" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 80%;"/>
+		          <h1>Simplified Architectural Overview</h1><br>
+		          <div class="content">
+		          <p>The following high-level model illustrates layered segmentation, identity-bound access, and compartmentalized infrastructure domains.</p>
+		          </div>
+                <h3>Logical Security Layers</h3><br>
+                <img src="images/Layered security architecture diagram.png" alt="" style="display: block; margin-left: auto; margin-right: auto; width: 90%;"/>
             </div>
         <div class="content">
-          <h3>Security Architecture & Zero Trust Engineering</h3><br>
-          <p>Design and implementation of defensible architectures aligned with Zero Trust principles, minimizing implicit trust and enforcing identity-bound access controls. </p>
+          <h3>Layered Enforcement Model</h3><br>
+          <p>Each horizontal boundary represents a security enforcement layer: </p>
           <div class="content">
           <p>Capabilities:</p>
-					<li>Zero Trust Network Architecture (ZTNA) design</li>
-					<li>Identity-centric access control modeling</li>
-					<li>Trust boundary definition and enforcement</li>
-					<li>Zero Trust Network Architecture (ZTNA) design</li>
-					<li>Micro-segmentation strategy</li>
-					<li>East–West traffic restriction design</li>
-					<li>Least privilege policy engineering</li>
-					<li>Threat modeling (STRIDE / attack surface analysis)</li>
-					<li>Secure hybrid infrastructure design</li><br>
-		          <p>Architectures are designed to prevent lateral movement, minimize blast radius, and enforce policy-driven access control across infrastructure layers.</p>
+					<li>Identity-based overlay authentication</li>
+					<li>Firewall zone segmentation</li>
+					<li>VLAN-backed network isolation</li>
+					<li>Hypervisor-level workload separation</li>
+					<li>Container namespace isolation</li>
+					<li>Management-plane segregation</li><br>
+		          <p>No single layer is trusted in isolation.</p>
+        </div>
+        </div>
+           <div class="title">
+		          <h1>Domain Description</h1><br>
+            </div>
+        <div class="content marbottom30"> 
+          <h3>External / Internet</h3><br>
+          <div class="content">
+          <p>Untrusted environment. No direct administrative access permitted.</p>
         </div>
         </div>
         <div class="clear"></div><br>
         <div class="content marbottom30"> 
-          <h3>Virtualization & Container Security Engineering</h3><br>
-          <p>Hardened compute environments with strict workload isolation and controlled inter-service communication.</p>
+          <h3>Encrypted Identity Overlay</h3><br>
           <div class="content">
-          <p>Virtualization Hardening:</p>
-					<li>Hypervisor isolation and attack surface reduction (KVM-based clusters)</li>
-					<li>Secure clustering and HA design using Proxmox</li>
-					<li>Network bridge segmentation and VLAN enforcement</li>
-					<li>Secure storage backends and access controls</li>
-					<li>RBAC policy design</li><br>
-           <p>Container Security:</p>
-					<li>Secure image lifecycle management</li>
-					<li>Runtime isolation & namespace hardening</li>
-	            <li>Network namespace segmentation</li>
-					<li>Reverse proxy and ingress control</li>
-					<li>Secure orchestration patterns using Docker</li>
-					<li>Supply chain integrity validation</li><br>
-		         <p>Focus: deterministic isolation, minimized cross-tenant exposure, and reduced attack propagation paths.</p>
+          <p>Implemented via Tailscale (WireGuard-based).</p>
+					<li>Device-bound authentication</li>
+					<li>Tag-based access control lists</li>
+					<li>Separate access tiers for Operations / Audit / Administration</li>
+					<li>Dedicated exit nodes per trust domain</li>
         </div>
         </div>
         <div class="clear"></div><br>
         <div class="content marbottom30"> 
-          <h3>Network Security Engineering</h3><br>
-          <p>Layered network design enforcing explicit traffic control across L2–L7.</p>
+          <h3>Firewall Segmentation Core</h3><br>
           <div class="content">
-          <p>Firewall & Routing Architecture:</p>
-					<li>Stateful inspection policy engineering</li>
-					<li>Multi-zone segmentation</li>
-					<li>Inter-VLAN access control modeling</li>
-					<li>NAT & asymmetric routing correction</li>
-					<li>IDS/IPS placement strategy</li>
-					<li>Secure gateway architecture with OPNsense</li><br>
-           <p>Secure Remote Access:</p>
-					<li>Identity-bound encrypted overlays using Tailscale</li>
-					<li>WireGuard-based secure mesh design</li>
-	            <li>Exit-node compartmentalization strategies</li>
-					<li>Split vs full tunnel architecture analysis</li>
-					<li>Access tiering for untrusted devices</li>
-					<li>Segregation of management plane from data plane</li><br>
-		         <p>Designed for environments requiring remote multi-client access with strict trust boundary enforcement.</p>
-        </div>
-        </div>
-        <div class="clear"></div><br>
-        <div class="content marbottom30"> 
-          <h3>Compartmentalized Infrastructure Design</h3><br>
-          <p>High-assurance segmentation for multi-tenant, multi-client, or high-risk environments.</p>
-          <div class="content">
-          <p>Engineering focus:</p>
-					<li>Risk-domain isolation</li>
-					<li>Perimeter reduction strategy</li>
-					<li>Privilege domain separation</li>
-					<li>VLAN + overlay trust alignment</li>
-					<li>Management plane isolation</li>
-					<li>Infrastructure-level blast radius containment</li><br>
-           <p>Applicable to:</p>
-					<li>Service providers</li>
-					<li>Financial services</li>
-	            <li>Critical infrastructure</li>
-					<li>Regulated EU environments (NIS2-aligned)</li><br>
+               <p>Implemented using OPNsense.</p>
+					<li>Default deny inter-zone policy</li>
+					<li>Strict service-based rule definitions</li>
+					<li>East–West inspection</li>
+					<li>DNS and routing control</li>
         </div>
         </div>        
         <div class="clear"></div><br>
         <div class="content marbottom30"> 
-          <h3>Incident Response & Digital Forensics</h3><br>
-          <p>Structured response with evidentiary integrity and post-compromise architectural correction.</p>
+          <h3>Core Infrastructure Zone</h3><br>
+          <p>Clustered compute environment using Proxmox.</p>
           <div class="content">
-          <p>Capabilities:</p>
-					<li>Host and network forensic acquisition</li>
-					<li>Log correlation & timeline reconstruction</li>
-					<li>TTP mapping against adversary frameworks</li>
-					<li>Root cause and lateral movement tracing</li>
-					<li>Containment architecture redesign</li>
-					<li>Post-incident hardening strategy</li><br>
-					<p>Objective: eliminate systemic weaknesses, not merely remediate artifacts.</p>
+					<li>Dedicated management VLAN</li>
+					<li>Storage replication network isolated</li>
+					<li>No direct exposure to user-facing segments</li>
         </div>
         </div>        
         <div class="clear"></div><br>
         <div class="content marbottom30"> 
-          <h3>Secure Systems Integration</h3><br>
-          <p>Deployment of security-aligned software stacks within existing enterprise ecosystems.</p>
+          <h3>Containerized Service Layer</h3><br>
+          <p>Runtime isolation using Docker.</p>
           <div class="content">
-					<li>Secure reverse proxy architecture</li>
-					<li>Identity provider integration</li>
-					<li>Infrastructure-as-Code hardening</li>
-					<li>Secure CI/CD considerations</li>
-					<li>Compliance-aware deployment models</li><br>
-					<p>Emphasis on minimizing misconfiguration risk and reducing configuration drift.</p>
+					<li>Service-per-container isolation</li>
+					<li>Reverse proxy enforcement boundary</li>
+					<li>No implicit inter-container trust</li>
         </div>
         </div>          
         <div class="clear"></div><br>
         <div class="content marbottom30"> 
-          <h3>Engagement Model</h3><br>
+          <h3>Compromise Containment Model</h3><br>
           <div class="content">
-          <p>Capabilities:</p>
-					<li>Security Architecture Design (Greenfield or Retrofit)</li>
-					<li>Infrastructure Hardening Projects</li>
-					<li>Zero Trust Transformation</li>
-					<li>Secure Multi-Client Platform Design</li>
-					<li>Incident Response Retainer</li>
-					<li>Executive Technical Advisory</li><br>
+          <p>If an adversary compromises:</p><br>
+					<li>SA field device → confined to IoT/Field VLAN</li>
+					<li>A remote laptop → restricted by overlay ACL tier</li>
+					<li>A containerized service → isolated from hypervisor control plane</li>
+					<li>A workload VM → restricted from management plane</li>
         </div>
+        </div>     
+         <div class="clear"></div><br>
+        <div class="content marbottom30"> 
+          <h3>Compromise Scenario Simulation</h3><br>
+          <div class="content">
+          <p>Example:</p><br>
+          <p>Scenario: Field IoT device compromise</p>  
+          <p>Result:</p>  
+     				<li>No access to hypervisor management</li>
+					<li>No access to storage backend</li>
+					<li>No lateral traversal to Operations Zone</li>
+					<li>Controlled egress via restricted firewall policy</li><br>
+					<p>This demonstrates deterministic containment, not theoretical segmentation.</p>
+		        </div>
         </div>     
          <div class="clear"></div>
     </div>  
