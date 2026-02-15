@@ -43,45 +43,132 @@
   <div class="content_wrap">
     <div class="left-panel">
       <div class="panel">
-        <div class="title padBottom">
-          <h1>Services</h1>
-          <h2>Protect Your Identity and Data</h2>
-        </div>
-        <div class="content"> <img src="images/network.jpg" height="180"/>
-          <h3>WIFI and Network</h3>
-          <p>From high availability which depends upon good network design with a well implemented next generation firewall. Segmentation through VLANs for performance with extra security, plus deploying new technology to provide good access control. </p>
-        </div>
-        <div class="clear"></div><br><br>
-        <div class="content marbottom30"> <img src="images/operatingsw.jpg" height="170"/>
-          <h3>Detection and Monitoring</h3>
-          <p>Intrusion Detection Systems monitor network activity for unusual behavior that may indicate a security breach.</p>
-          <p>Keeping software and systems updated, Continually monitoring and accessing the vulnerablities exposed by your applications running on your system, is a major way to minimise your attack surface.</p>
-        </div>
-
-        <div class="content marbottom30"> <img src="images/Applications.jpg" height="150"/>
-          <h3>Emerging Technologies in Cyber Security</h3>
-          <p>Artificial Intelligence is increasingly used to identify and respond to threats more quickly and effectively.</p>
-          <p>Cloud Security as businesses move to cloud environments, implementing security measures specific to cloud services is crucial. </p>
-        </div>
-        <div class="clear"></div><br><br>
-        <div class="content"> <img src="images/rs-S.jpg" height="145"/>
-          <h3>Proactive Mitigation</h3>
-          <p>proactive mitigation is important in keeping an organization at par with emerging threats. While incident response reacts to incidents after they have taken place, proactive management deals with the identification and fixing of vulnerabilities even before they occur. This reduces not only the likelihood of an attack but also the damage inflicted if one occurs.</p>
-          <p>Proactive measures would involve updating software regularly, having strong access controls, training employees, and ensuring that their security posture is much stronger. In organizational terms, it would mean being able to act proactively, reacting to threats, and countering them before they develop fully to become major breaches or disruptions.</p>
-        </div>
-        <div class="clear"></div><br><br>
-        <div class="content marbottom30"> <img src="images/PenetrationTesting.jpg" height="150"/>
-          <h3>Penetration Testing</h3>
-          <p>Protecting your online digital footprint requires not only internal monitoring and vulnerability processing, but having an attackers view of your exposed connections is an excellant way to analyse the risk to your organisation.</p>
-        </div>
-        <div class="clear"></div><br><br>
-        <div class="content marbottom30"> <img src="images/DigitalForensics.jpg" height="150"/>
-          <h3>Digital Forensics</h3>
-          <p>Certification completed for the recovery, investigation, examination, and analysis of material found in digital devices, SIFT workstation, Autopsy, The Sleuth Kit, FTK Forensic Toolkit, and EnCase </p>
+				<div class="title">
+		          <h1>Services</h1>
+            </div>
+        <div class="content">
+          <h3>Security Architecture & Zero Trust Engineering</h3>
+          <p>Design and implementation of defensible architectures aligned with Zero Trust principles, minimizing implicit trust and enforcing identity-bound access controls. </p>
+          <div class="content">
+          <p>Capabilities:</p>
+					<li>Zero Trust Network Architecture (ZTNA) design</li>
+					<li>Identity-centric access control modeling</li>
+					<li>Trust boundary definition and enforcement</li>
+					<li>Zero Trust Network Architecture (ZTNA) design</li>
+					<li>Micro-segmentation strategy</li>
+					<li>East–West traffic restriction design</li>
+					<li>Least privilege policy engineering</li>
+					<li>Threat modeling (STRIDE / attack surface analysis)</li>
+					<li>Secure hybrid infrastructure design</li><br>
+		          <p>Architectures are designed to prevent lateral movement, minimize blast radius, and enforce policy-driven access control across infrastructure layers.</p>
         </div>
         </div>
-        <div class="clear"></div>
-    </div>
+        <div class="clear"></div><br>
+        <div class="content marbottom30"> 
+          <h3>Virtualization & Container Security Engineering</h3>
+          <p>Hardened compute environments with strict workload isolation and controlled inter-service communication.</p>
+          <div class="content">
+          <p>Virtualization Hardening:</p>
+					<li>Hypervisor isolation and attack surface reduction (KVM-based clusters)</li>
+					<li>Secure clustering and HA design using Proxmox</li>
+					<li>Network bridge segmentation and VLAN enforcement</li>
+					<li>Secure storage backends and access controls</li>
+					<li>RBAC policy design</li><br>
+           <p>Container Security:</p>
+					<li>Secure image lifecycle management</li>
+					<li>Runtime isolation & namespace hardening</li>
+	            <li>Network namespace segmentation</li>
+					<li>Reverse proxy and ingress control</li>
+					<li>Secure orchestration patterns using Docker</li>
+					<li>Supply chain integrity validation</li><br>
+		         <p>Focus: deterministic isolation, minimized cross-tenant exposure, and reduced attack propagation paths.</p>
+        </div>
+        </div>
+        <div class="clear"></div><br>
+        <div class="content marbottom30"> 
+          <h3>Network Security Engineering</h3>
+          <p>Layered network design enforcing explicit traffic control across L2–L7.</p>
+          <div class="content">
+          <p>Firewall & Routing Architecture:</p>
+					<li>Stateful inspection policy engineering</li>
+					<li>Multi-zone segmentation</li>
+					<li>Inter-VLAN access control modeling</li>
+					<li>NAT & asymmetric routing correction</li>
+					<li>IDS/IPS placement strategy</li>
+					<li>Secure gateway architecture with OPNsense</li><br>
+           <p>Secure Remote Access:</p>
+					<li>Identity-bound encrypted overlays using Tailscale</li>
+					<li>WireGuard-based secure mesh design</li>
+	            <li>Exit-node compartmentalization strategies</li>
+					<li>Split vs full tunnel architecture analysis</li>
+					<li>Access tiering for untrusted devices</li>
+					<li>Segregation of management plane from data plane</li><br>
+		         <p>Designed for environments requiring remote multi-client access with strict trust boundary enforcement.</p>
+        </div>
+        </div>
+        <div class="clear"></div><br>
+        <div class="content marbottom30"> 
+          <h3>Compartmentalized Infrastructure Design</h3>
+          <p>High-assurance segmentation for multi-tenant, multi-client, or high-risk environments.</p>
+          <div class="content">
+          <p>Engineering focus:</p>
+					<li>Risk-domain isolation</li>
+					<li>Perimeter reduction strategy</li>
+					<li>Privilege domain separation</li>
+					<li>VLAN + overlay trust alignment</li>
+					<li>Management plane isolation</li>
+					<li>Infrastructure-level blast radius containment</li><br>
+           <p>Applicable to:</p>
+					<li>Service providers</li>
+					<li>Financial services</li>
+	            <li>Critical infrastructure</li>
+					<li>Regulated EU environments (NIS2-aligned)</li><br>
+        </div>
+        </div>        
+        <div class="clear"></div><br>
+        <div class="content marbottom30"> 
+          <h3>Incident Response & Digital Forensics</h3>
+          <p>Structured response with evidentiary integrity and post-compromise architectural correction.</p>
+          <div class="content">
+          <p>Capabilities:</p>
+					<li>Host and network forensic acquisition</li>
+					<li>Log correlation & timeline reconstruction</li>
+					<li>TTP mapping against adversary frameworks</li>
+					<li>Root cause and lateral movement tracing</li>
+					<li>Containment architecture redesign</li>
+					<li>Post-incident hardening strategy</li><br>
+					<p>Objective: eliminate systemic weaknesses, not merely remediate artifacts.</p>
+        </div>
+        </div>        
+        <div class="clear"></div><br>
+        <div class="content marbottom30"> 
+          <h3>Secure Systems Integration</h3>
+          <p>Deployment of security-aligned software stacks within existing enterprise ecosystems.</p>
+          <div class="content">
+					<li>Secure reverse proxy architecture</li>
+					<li>Identity provider integration</li>
+					<li>Infrastructure-as-Code hardening</li>
+					<li>Secure CI/CD considerations</li>
+					<li>Compliance-aware deployment models</li><br>
+					<p>Emphasis on minimizing misconfiguration risk and reducing configuration drift.</p>
+        </div>
+        </div>          
+        <div class="clear"></div><br>
+        <div class="content marbottom30"> 
+          <h3>Engagement Model</h3>
+          <div class="content">
+          <p>Capabilities:</p>
+					<li>Security Architecture Design (Greenfield or Retrofit)</li>
+					<li>Infrastructure Hardening Projects</li>
+					<li>Zero Trust Transformation</li>
+					<li>Secure Multi-Client Platform Design</li>
+					<li>Incident Response Retainer</li>
+					<li>Executive Technical Advisory</li><br>
+        </div>
+        </div>     
+         <div class="clear"></div>
+    </div>  
+    </div>       
     <div class="right-panel">
       <div class="contact-panel">
         <div class="title">
@@ -124,7 +211,8 @@
     <div class="clear"></div>
   </div>
   <!-- end of BOX WRAPPER -->
-  <div class="clear"></div>
+
+</div>  <div class="clear"></div>
 </div>
 <div class="footer-wrapper">
   <div class="footer">
@@ -133,7 +221,7 @@
           <h1>ABOUT</h1>
           <h2>Pesonal Data and Identity Protection</h2>
           <div class="content">
-            <P>Cybercrime is projected to cost businesses up to $10.5 trillion by 2025, with attacks becoming increasingly sophisticated and expensive. Additionally, 72% of business owners express concern about future cybersecurity risks, particularly related to hybrid or remote work environments.</P>
+            <P>Cybercrime is projected to cost businesses up to $10.5 trillion by 2026, with attacks becoming increasingly sophisticated and expensive. Additionally, 72% of business owners express concern about future cybersecurity risks, particularly related to hybrid or remote work environments.</P>
           </div>
         </div>
     </div>
